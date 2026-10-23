@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tessera:schema:assets:1",
+  "title": "Tessera asset registry (assets.json), format version 1",
+  "type": "object",
+  "required": ["format", "formatVersion", "assets"],
+  "properties": {
+    "format": { "const": "tessera-assets" },
+    "formatVersion": { "type": "integer", "minimum": 1 },
+    "assets": {
+      "type": "object",
+      "propertyNames": { "pattern": "^ast_[A-Za-z0-9_-]{4,64}$" },
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "path", "kind"],
+        "properties": {
+          "id": { "type": "string" },
+          "path": { "type": "string", "description": "Project-relative path with forward slashes" },
+          "kind": { "enum": ["image", "audio", "video", "captions", "font", "file"] },
+          "mime": { "type": "string" },
+          "bytes": { "type": "integer", "minimum": 0 },
+          "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "originalName": { "type": "string" },
+          "addedAt": { "type": "string" },
+          "replacedAt": { "type": "string" },
+          "importedFrom": { "type": "string" },
+          "width": { "type": "integer" },
+          "height": { "type": "integer" },
+          "optimized": {
+            "type": "object",
+            "properties": {
+              "originalPath": { "type": "string" },
+              "originalBytes": { "type": "integer" },
+              "maxWidth": { "type": "integer" },
+              "quality": { "type": "integer" },
+              "at": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

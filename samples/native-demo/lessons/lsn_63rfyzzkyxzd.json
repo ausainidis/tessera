@@ -1,0 +1,108 @@
+{
+  "format": "tessera-lesson",
+  "formatVersion": 1,
+  "id": "lsn_63rfyzzkyxzd",
+  "title": "What is personal data?",
+  "kind": "lesson",
+  "description": "",
+  "blocks": [
+    {
+      "id": "blk_yw1xnysg6rwr",
+      "type": "image",
+      "v": 1,
+      "content": {
+        "asset": "ast_vtic5w2yc2df",
+        "alt": "Illustration titled Data at work",
+        "decorative": false,
+        "caption": "Personal data appears in many everyday tasks."
+      },
+      "settings": {
+        "size": "wide"
+      },
+      "overrides": {}
+    },
+    {
+      "id": "blk_9348rwzi9i82",
+      "type": "text",
+      "v": 1,
+      "content": {
+        "heading": "Why it matters",
+        "headingLevel": 2,
+        "html": "<p><strong>Personal data</strong> is any information that relates to an identified or identifiable person. Handling it carefully protects people and your organisation.</p>"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_dd0xtk91f4o9",
+      "type": "list",
+      "v": 1,
+      "content": {
+        "style": "bulleted",
+        "items": [
+          {
+            "id": "itm_a1b2c3",
+            "html": "Names and contact details"
+          },
+          {
+            "id": "itm_d4e5f6",
+            "html": "Identification numbers"
+          },
+          {
+            "id": "itm_g7h8i9",
+            "html": "Location data and online identifiers"
+          }
+        ]
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_7wyfcg3et8d9",
+      "type": "quote",
+      "v": 1,
+      "content": {
+        "variant": "quote",
+        "html": "<p>Privacy is not about having something to hide. It is about having control.</p>",
+        "attribution": "Sample attribution",
+        "role": "Course author"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_z7cnn7iw61d5",
+      "type": "knowledgeCheck",
+      "v": 1,
+      "content": {
+        "mode": "single",
+        "question": "<p>Which of these is personal data?</p>",
+        "choices": [
+          {
+            "id": "chc_kc1aaa",
+            "text": "An employee’s home address",
+            "correct": true,
+            "feedback": "Yes: an address identifies a person."
+          },
+          {
+            "id": "chc_kc1bbb",
+            "text": "The opening hours of the office",
+            "correct": false,
+            "feedback": "Opening hours do not relate to a person."
+          },
+          {
+            "id": "chc_kc1ccc",
+            "text": "The average temperature in March",
+            "correct": false,
+            "feedback": ""
+          }
+        ],
+        "feedbackCorrect": "Correct.",
+        "feedbackIncorrect": "Not quite. Personal data relates to an identifiable person.",
+        "allowRetry": true
+      },
+      "settings": {},
+      "overrides": {}
+    }
+  ]
+}

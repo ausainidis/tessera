@@ -1,0 +1,193 @@
+{
+  "format": "tessera-lesson",
+  "formatVersion": 1,
+  "id": "lsn_p03n7afbo2pk",
+  "title": "Everyday habits",
+  "kind": "lesson",
+  "description": "",
+  "blocks": [
+    {
+      "id": "blk_r73n8ftr7vr4",
+      "type": "heading",
+      "v": 1,
+      "content": {
+        "text": "Three habits",
+        "level": 2
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_4pph4h37wl84",
+      "type": "imageText",
+      "v": 1,
+      "content": {
+        "asset": "ast_8iu40ismy9f7",
+        "alt": "Illustration titled Lock screen",
+        "decorative": false,
+        "heading": "Lock your screen",
+        "html": "<p>Press <strong>Windows + L</strong> whenever you step away, even for a minute.</p>",
+        "imagePosition": "right"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_7tod29ghsu12",
+      "type": "gallery",
+      "v": 1,
+      "content": {
+        "layout": "grid",
+        "columns": 3,
+        "items": [
+          {
+            "id": "itm_gal001",
+            "asset": "ast_h6bxlyigwrvt",
+            "alt": "Clear desk illustration",
+            "caption": "Clear desk"
+          },
+          {
+            "id": "itm_gal002",
+            "asset": "ast_8iu40ismy9f7",
+            "alt": "Lock screen illustration",
+            "caption": "Lock screen"
+          },
+          {
+            "id": "itm_gal003",
+            "asset": "ast_2cmgspasdzat",
+            "alt": "Shredding illustration",
+            "caption": "Shred paper"
+          }
+        ]
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_fpsxl6vr5i47",
+      "type": "accordion",
+      "v": 1,
+      "content": {
+        "items": [
+          {
+            "id": "itm_acc001",
+            "title": "Clear desk",
+            "html": "<p>Put documents away at the end of the day.</p>"
+          },
+          {
+            "id": "itm_acc002",
+            "title": "Approved storage",
+            "html": "<p>Only store personal data in systems your organisation has approved.</p>"
+          }
+        ]
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_027lyk21pjj2",
+      "type": "tabs",
+      "v": 1,
+      "content": {
+        "items": [
+          {
+            "id": "itm_tab001",
+            "title": "At the office",
+            "html": "<p>Use the confidential waste bins.</p>"
+          },
+          {
+            "id": "itm_tab002",
+            "title": "At home",
+            "html": "<p>Keep work papers out of shared spaces.</p>"
+          }
+        ]
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_hnxuvkr4hjvs",
+      "type": "continue",
+      "v": 1,
+      "content": {
+        "label": "Continue",
+        "requireComplete": false,
+        "hint": "Complete the activities above to continue."
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_4wf38wm1eoy1",
+      "type": "flashcards",
+      "v": 1,
+      "content": {
+        "items": [
+          {
+            "id": "itm_fc0001",
+            "front": "<p>Data breach</p>",
+            "back": "<p>A security incident affecting personal data.</p>"
+          },
+          {
+            "id": "itm_fc0002",
+            "front": "<p>Data subject</p>",
+            "back": "<p>The person the data is about.</p>"
+          }
+        ]
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_hfs0fsvvcbtz",
+      "type": "divider",
+      "v": 1,
+      "content": {
+        "style": "dots"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_n4jhwmyo8nha",
+      "type": "audio",
+      "v": 1,
+      "content": {
+        "asset": "ast_c1blig2r9bgq",
+        "title": "Short audio briefing",
+        "captions": "ast_wun0iaflrzgy",
+        "transcript": "<p>[A short tone plays.]</p>"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_ydbzhy90c62d",
+      "type": "video",
+      "v": 1,
+      "content": {
+        "source": "url",
+        "asset": null,
+        "poster": null,
+        "url": "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+        "title": "Big Buck Bunny (Blender Foundation): example online video",
+        "captions": null,
+        "transcript": "<p>Example transcript placeholder.</p>"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_7dcblbnqgcsn",
+      "type": "attachment",
+      "v": 1,
+      "content": {
+        "asset": "ast_o1fi8pr4esft",
+        "label": "Download the checklist",
+        "description": "A plain-text checklist you can print."
+      },
+      "settings": {},
+      "overrides": {}
+    }
+  ]
+}

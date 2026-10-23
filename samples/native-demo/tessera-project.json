@@ -1,0 +1,44 @@
+{
+  "format": "tessera-project",
+  "formatVersion": 1,
+  "id": "crs_73yh1c31f12y",
+  "generator": {
+    "name": "Tessera",
+    "version": "0.1.0"
+  },
+  "course": {
+    "title": "Handling Personal Data",
+    "description": "<p>A short sample course that shows every Tessera block type. It works fully offline except for the online video example.</p>",
+    "objectives": [
+      "Recognise personal data in everyday work",
+      "Apply three habits that protect it",
+      "Know when and how to report an incident"
+    ],
+    "language": "en",
+    "author": "Tessera sample"
+  },
+  "lessons": [
+    "lsn_icnatyn28vge",
+    "lsn_63rfyzzkyxzd",
+    "lsn_p03n7afbo2pk",
+    "lsn_4thnqfmv36nq",
+    "lsn_pzw5fcbfivqp"
+  ],
+  "navigation": {
+    "mode": "free",
+    "showOutline": true,
+    "showProgress": true,
+    "showLessonNav": true,
+    "coverPage": true
+  },
+  "theme": "themes/theme.json",
+  "stylesheets": [],
+  "styleMap": {},
+  "publish": {
+    "includeSource": false
+  },
+  "source": null,
+  "imports": [],
+  "created": "2026-10-23T21:24:43.588Z",
+  "modified": "2026-10-23T21:24:43.614Z"
+}

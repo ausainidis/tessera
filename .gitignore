@@ -1,0 +1,10 @@
+node_modules/
+dist/
+release/
+*.log
+.DS_Store
+Thumbs.db
+# Editor state inside sample projects
+samples/**/.tessera/autosave.json
+samples/**/.tessera/checkpoints/
+samples/**/.tessera/trash/

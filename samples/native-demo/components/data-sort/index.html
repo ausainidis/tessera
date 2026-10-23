@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sorting activity</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; margin: 0; padding: 20px; color: #1f2328; }
+  h1 { font-size: 1.1rem; margin: 0 0 12px; }
+  ul { list-style: none; padding: 0; display: grid; gap: 8px; }
+  button { font: inherit; padding: 8px 14px; border-radius: 6px; border: 1px solid #888; background: #fff; cursor: pointer; }
+  button[aria-pressed=true] { background: #1d5f8a; color: #fff; border-color: #1d5f8a; }
+  .done { margin-top: 12px; font-weight: 600; color: #1a7f37; }
+</style></head>
+<body>
+<h1 id="title">Select every item that is personal data</h1>
+<ul id="items"></ul>
+<p class="done" id="done" role="status"></p>
+<script src="activity.js"></script>
+</body></html>

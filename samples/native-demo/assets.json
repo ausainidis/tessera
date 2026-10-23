@@ -1,0 +1,76 @@
+{
+  "format": "tessera-assets",
+  "formatVersion": 1,
+  "assets": {
+    "ast_vtic5w2yc2df": {
+      "id": "ast_vtic5w2yc2df",
+      "path": "assets/images/workplace.svg",
+      "kind": "image",
+      "mime": "image/svg+xml",
+      "bytes": 694,
+      "sha256": "b945e3aea7153d922129c622671a742ca0faff41438519aca87ed562ef62159d",
+      "originalName": "workplace.svg",
+      "addedAt": "2026-10-23T21:24:43.596Z"
+    },
+    "ast_h6bxlyigwrvt": {
+      "id": "ast_h6bxlyigwrvt",
+      "path": "assets/images/desk.svg",
+      "kind": "image",
+      "mime": "image/svg+xml",
+      "bytes": 692,
+      "sha256": "e0077c1b2c702993c241d702c1b5ad1e1a5d15efaa07147ef274f2de356be58d",
+      "originalName": "desk.svg",
+      "addedAt": "2026-10-23T21:24:43.598Z"
+    },
+    "ast_8iu40ismy9f7": {
+      "id": "ast_8iu40ismy9f7",
+      "path": "assets/images/screen.svg",
+      "kind": "image",
+      "mime": "image/svg+xml",
+      "bytes": 690,
+      "sha256": "7fa464bf512c2e9b86e1d4f23540ba8c5c8a28c80e21f22c1798384890e86894",
+      "originalName": "screen.svg",
+      "addedAt": "2026-10-23T21:24:43.600Z"
+    },
+    "ast_2cmgspasdzat": {
+      "id": "ast_2cmgspasdzat",
+      "path": "assets/images/shred.svg",
+      "kind": "image",
+      "mime": "image/svg+xml",
+      "bytes": 693,
+      "sha256": "8ed933b53a24566ca445021ad3dc3408caf336513bbd8d6caa2d0d31891bcf6f",
+      "originalName": "shred.svg",
+      "addedAt": "2026-10-23T21:24:43.602Z"
+    },
+    "ast_c1blig2r9bgq": {
+      "id": "ast_c1blig2r9bgq",
+      "path": "assets/audio/briefing.wav",
+      "kind": "audio",
+      "mime": "audio/wav",
+      "bytes": 12044,
+      "sha256": "122597ccf767cc8e15683c4f94cb4baca5996e1cc8f31acce509f5e0675df1ec",
+      "originalName": "briefing.wav",
+      "addedAt": "2026-10-23T21:24:43.604Z"
+    },
+    "ast_wun0iaflrzgy": {
+      "id": "ast_wun0iaflrzgy",
+      "path": "assets/captions/briefing.vtt",
+      "kind": "captions",
+      "mime": "text/vtt",
+      "bytes": 56,
+      "sha256": "d11b3b1999dba9a5aaa2a11084fd9ad5c59053f21111f48af4e7ec623c3b0d05",
+      "originalName": "briefing.vtt",
+      "addedAt": "2026-10-23T21:24:43.606Z"
+    },
+    "ast_o1fi8pr4esft": {
+      "id": "ast_o1fi8pr4esft",
+      "path": "assets/files/checklist.txt",
+      "kind": "file",
+      "mime": "text/plain",
+      "bytes": 110,
+      "sha256": "3def0b1e445053a40d2f9eb0d799ba2e75152c3cf7f2a2a5e9b9e3e45d34d480",
+      "originalName": "checklist.txt",
+      "addedAt": "2026-10-23T21:24:43.608Z"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "format": "tessera-theme",
+  "formatVersion": 1,
+  "id": "thm_ixsisy2em1vw",
+  "name": "Default",
+  "colors": {
+    "primary": "#1d5f8a",
+    "onPrimary": "#ffffff",
+    "text": "#1f2328",
+    "muted": "#57606a",
+    "background": "#ffffff",
+    "surface": "#f3f5f7",
+    "border": "#d0d7de",
+    "accent": "#a8471a",
+    "link": "#1d5f8a",
+    "focus": "#c45a00",
+    "success": "#1a7f37",
+    "error": "#b42318"
+  },
+  "typography": {
+    "bodyFont": "system",
+    "headingFont": "system",
+    "baseSize": 18,
+    "lineHeight": 1.6,
+    "scale": 1.25,
+    "headingWeight": 700,
+    "fonts": []
+  },
+  "spacing": {
+    "blockGap": 40,
+    "unit": 8
+  },
+  "layout": {
+    "contentWidth": 760,
+    "wideWidth": 1120
+  },
+  "borders": {
+    "radius": 8,
+    "width": 1
+  },
+  "buttons": {
+    "style": "filled",
+    "radius": 6,
+    "uppercase": false
+  },
+  "customCss": ""
+}

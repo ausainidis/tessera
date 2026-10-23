@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tessera:schema:project:1",
+  "title": "Tessera project manifest (tessera-project.json), format version 1",
+  "type": "object",
+  "required": ["format", "formatVersion", "id", "course", "lessons"],
+  "properties": {
+    "format": { "const": "tessera-project" },
+    "formatVersion": { "type": "integer", "minimum": 1 },
+    "id": { "$ref": "#/$defs/id" },
+    "generator": { "type": "object", "properties": { "name": { "type": "string" }, "version": { "type": "string" } } },
+    "course": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string", "description": "Sanitised rich text (HTML subset)" },
+        "objectives": { "type": "array", "items": { "type": "string" } },
+        "language": { "type": "string", "description": "BCP 47 language tag, e.g. en or de-AT" },
+        "author": { "type": "string" }
+      }
+    },
+    "lessons": { "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true, "description": "Lesson order; each id has a file lessons/<id>.json" },
+    "navigation": {
+      "type": "object",
+      "properties": {
+        "mode": { "enum": ["free", "sequential"] },
+        "showOutline": { "type": "boolean" },
+        "showProgress": { "type": "boolean" },
+        "showLessonNav": { "type": "boolean" },
+        "coverPage": { "type": "boolean" }
+      }
+    },
+    "theme": { "$ref": "#/$defs/relPath" },
+    "stylesheets": { "type": "array", "items": { "$ref": "#/$defs/relPath" } },
+    "styleMap": { "type": "object", "additionalProperties": { "type": "object", "properties": { "className": { "type": "string" } } } },
+    "publish": { "type": "object", "properties": { "includeSource": { "type": "boolean" } } },
+    "source": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["adapter", "mode", "root", "entry"],
+          "properties": {
+            "adapter": { "enum": ["rise", "html"] },
+            "mode": { "const": "preserve" },
+            "root": { "$ref": "#/$defs/relPath" },
+            "entry": { "type": "string" },
+            "dataFile": { "$ref": "#/$defs/relPath" },
+            "variant": { "type": "string" },
+            "importId": { "type": "string" },
+            "capabilities": { "type": "object", "additionalProperties": { "type": "boolean" } }
+          }
+        }
+      ]
+    },
+    "imports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "kind": { "type": "string" },
+          "strategy": { "type": "string" },
+          "importedAt": { "type": "string", "format": "date-time" },
+          "from": { "type": "string" },
+          "original": { "$ref": "#/$defs/relPath" },
+          "report": { "$ref": "#/$defs/relPath" }
+        }
+      }
+    },
+    "created": { "type": "string", "format": "date-time" },
+    "modified": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z]{2,8}_[A-Za-z0-9_-]{4,64}$" },
+    "relPath": {
+      "type": "string",
+      "pattern": "^(?![\\\\/])(?![A-Za-z]:)(?!(.*/)?\\.\\.(/|$)).+$",
+      "description": "Project-relative path with forward slashes; no leading slash, drive letter or '..'"
+    }
+  }
+}

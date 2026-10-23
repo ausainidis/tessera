@@ -1,0 +1,101 @@
+{
+  "format": "tessera-lesson",
+  "formatVersion": 1,
+  "id": "lsn_4thnqfmv36nq",
+  "title": "When things go wrong",
+  "kind": "lesson",
+  "description": "",
+  "blocks": [
+    {
+      "id": "blk_nj8y2vs2au6b",
+      "type": "process",
+      "v": 1,
+      "content": {
+        "intro": "<p>If you suspect a data breach, follow these steps.</p>",
+        "items": [
+          {
+            "id": "itm_pr0001",
+            "title": "Contain",
+            "html": "<p>Stop the problem getting worse, for example recall an email.</p>"
+          },
+          {
+            "id": "itm_pr0002",
+            "title": "Report",
+            "html": "<p>Tell the data protection lead within 24 hours.</p>"
+          },
+          {
+            "id": "itm_pr0003",
+            "title": "Record",
+            "html": "<p>Write down what happened and when.</p>"
+          }
+        ],
+        "summary": "<p>Reporting quickly is always better than waiting.</p>"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_6uv2e53pxmpo",
+      "type": "caseStudy",
+      "v": 1,
+      "content": {
+        "title": "The misdirected email",
+        "asset": "ast_2cmgspasdzat",
+        "alt": "Illustration",
+        "scenario": "<p>Sam sends a spreadsheet of client addresses to the wrong recipient.</p>",
+        "challenge": "<p>What should Sam do first?</p>",
+        "outcomeLabel": "See what Sam did",
+        "outcome": "<p>Sam asked the recipient to delete the email and reported it within the hour.</p>"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_wg01v8g9f3oy",
+      "type": "reflection",
+      "v": 1,
+      "content": {
+        "prompt": "<p>Think of a time you handled personal data. What would you do differently now?</p>",
+        "placeholder": "Your thoughts…",
+        "sampleAnswer": "<p>I would check the recipient list before sending.</p>"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_13bpx84uxos0",
+      "type": "embed",
+      "v": 1,
+      "content": {
+        "entry": "components/data-sort/index.html",
+        "title": "Sorting activity: personal data",
+        "kind": "component",
+        "sizing": "auto",
+        "height": 480,
+        "aspectRatio": "16/9",
+        "config": "{\"items\":[{\"label\":\"Email address\",\"personal\":true},{\"label\":\"Office floor plan\",\"personal\":false},{\"label\":\"Payroll number\",\"personal\":true}]}",
+        "completion": "event",
+        "allowSameOrigin": false
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_e9bus0j5ujds",
+      "type": "button",
+      "v": 1,
+      "content": {
+        "label": "Go to the final assessment",
+        "action": "lesson",
+        "url": "",
+        "lessonId": "lsn_pzw5fcbfivqp",
+        "asset": null,
+        "intro": ""
+      },
+      "settings": {
+        "align": "center"
+      },
+      "overrides": {}
+    }
+  ]
+}

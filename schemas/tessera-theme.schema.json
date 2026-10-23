@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tessera:schema:theme:1",
+  "title": "Tessera theme (themes/*.json or *.tessera-theme.json), format version 1",
+  "type": "object",
+  "required": ["format", "formatVersion", "colors", "typography"],
+  "properties": {
+    "format": { "const": "tessera-theme" },
+    "formatVersion": { "type": "integer", "minimum": 1 },
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "colors": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "pattern": "^#[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$" },
+      "description": "Keys: primary, onPrimary, text, muted, background, surface, border, accent, link, focus, success, error"
+    },
+    "typography": {
+      "type": "object",
+      "properties": {
+        "bodyFont": { "type": "string", "description": "system, serif, mono, or a family listed in fonts" },
+        "headingFont": { "type": "string" },
+        "baseSize": { "type": "number" },
+        "lineHeight": { "type": "number" },
+        "scale": { "type": "number" },
+        "headingWeight": { "type": "number" },
+        "fonts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["family", "src"],
+            "properties": {
+              "family": { "type": "string" },
+              "src": { "type": "string", "description": "Project-relative font file" },
+              "weight": { "type": "string" },
+              "style": { "enum": ["normal", "italic"] }
+            }
+          }
+        }
+      }
+    },
+    "spacing": { "type": "object", "properties": { "blockGap": { "type": "number" }, "unit": { "type": "number" } } },
+    "layout": { "type": "object", "properties": { "contentWidth": { "type": "number" }, "wideWidth": { "type": "number" } } },
+    "borders": { "type": "object", "properties": { "radius": { "type": "number" }, "width": { "type": "number" } } },
+    "buttons": { "type": "object", "properties": { "style": { "enum": ["filled", "outline"] }, "radius": { "type": "number" }, "uppercase": { "type": "boolean" } } },
+    "customCss": { "type": "string" }
+  }
+}

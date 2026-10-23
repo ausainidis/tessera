@@ -1,0 +1,99 @@
+{
+  "format": "tessera-lesson",
+  "formatVersion": 1,
+  "id": "lsn_pzw5fcbfivqp",
+  "title": "Final assessment",
+  "kind": "assessment",
+  "description": "",
+  "blocks": [
+    {
+      "id": "blk_xont6u1ll803",
+      "type": "text",
+      "v": 1,
+      "content": {
+        "heading": "",
+        "headingLevel": 2,
+        "html": "<p>Answer all questions. You need 80% to pass.</p>"
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_3vk9n1gx3iuu",
+      "type": "assessmentQuestion",
+      "v": 1,
+      "content": {
+        "mode": "single",
+        "question": "<p>Within how many hours should you report a suspected breach?</p>",
+        "choices": [
+          {
+            "id": "chc_q1aaaa",
+            "text": "24 hours",
+            "correct": true,
+            "feedback": ""
+          },
+          {
+            "id": "chc_q1bbbb",
+            "text": "One week",
+            "correct": false,
+            "feedback": ""
+          },
+          {
+            "id": "chc_q1cccc",
+            "text": "Only if asked",
+            "correct": false,
+            "feedback": ""
+          }
+        ],
+        "feedbackCorrect": "Correct.",
+        "feedbackIncorrect": "The answer is 24 hours.",
+        "points": 1
+      },
+      "settings": {},
+      "overrides": {}
+    },
+    {
+      "id": "blk_ubexlanyaw7x",
+      "type": "assessmentQuestion",
+      "v": 1,
+      "content": {
+        "mode": "multiple",
+        "question": "<p>Which are good habits? Select all that apply.</p>",
+        "choices": [
+          {
+            "id": "chc_q2aaaa",
+            "text": "Lock your screen",
+            "correct": true,
+            "feedback": ""
+          },
+          {
+            "id": "chc_q2bbbb",
+            "text": "Use approved storage",
+            "correct": true,
+            "feedback": ""
+          },
+          {
+            "id": "chc_q2cccc",
+            "text": "Email spreadsheets to personal accounts",
+            "correct": false,
+            "feedback": ""
+          }
+        ],
+        "feedbackCorrect": "Correct.",
+        "feedbackIncorrect": "Locking screens and approved storage are good habits.",
+        "points": 2
+      },
+      "settings": {},
+      "overrides": {}
+    }
+  ],
+  "assessment": {
+    "passThreshold": 80,
+    "attempts": 3,
+    "shuffleQuestions": false,
+    "shuffleChoices": false,
+    "feedback": "after-each",
+    "revealAnswers": true,
+    "requiredForCompletion": true
+  }
+}
